@@ -1,0 +1,19 @@
+git:
+  as_submodule: robot_vision/point_tracking/pips/source
+pip:
+  deps:
+    - imageio
+    - tensorboardX
+    - einops
+    - fire
+    - moviepy
+    - scikit-learn
+
+#custom_cmd_parent:
+#  - "git submodule update --remote robot_vision/point_tracking/pips/source"
+
+data:
+  wget:
+    - rel_path: pips
+      url:      https://www.dropbox.com/s/glk6jmoa9yeervl/reference_model.tar.gz
+      unpack:   "tar -xvf reference_model.tar.gz"

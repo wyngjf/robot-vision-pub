@@ -1,0 +1,9 @@
+git:
+  url:                  https://github.com/NVIDIA/apex.git
+  commit:               7995de18677295c5edeeab082179edbfdb6ee16a
+  recursive:            False
+pip:
+  ignore_installed:     True
+  custom_cmd:
+    - 'python setup.py install --cuda_ext --cpp_ext'
+#    - 'pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./'

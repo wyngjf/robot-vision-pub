@@ -1,0 +1,10 @@
+git:
+  url:        https://github.com/IDEA-Research/GroundingDINO.git
+  recursive:  False
+
+pip:
+  this_pkg_install_mode: develop
+data:
+  wget:
+    - rel_path:   groundingdino
+      url:        https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth

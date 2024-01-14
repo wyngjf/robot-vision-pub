@@ -1,0 +1,17 @@
+params:
+  num_image_pairs: 25
+  num_matches_per_image_pair: 100
+
+networks:
+  toolbag_3: trained_models/tutorials/toolbag_3/003501.pth
+  caterpillar_3: trained_models/tutorials/caterpillar_3/003501.pth
+  toolbag_18_3: trained_models/tutorials/toolbag_18_3/002000.pth
+  caterpillar_34_3: trained_models/tutorials/caterpillar_34_3/000900.pth
+  cucumber_34_3: trained_models/cucumber_34_3/000700.pth
+  zuchini_34_3: trained_models/zuchini_34_3/001000.pth
+  toolbag_34_3: trained_models/toolbag_34_3/000500.pth
+  cloth_34_3: trained_models/cloth_34_3/000700.pth
+
+dataset: []                 # which dataset to use, not used for now
+
+output_dir: analysis

@@ -1,0 +1,30 @@
+train:
+    use_gpu: True
+    batch_size: 1
+    num_workers: 1
+    num_iterations: 10000
+    save_rate: 200
+
+    learning_rate: 1e-4
+    learning_rate_decay: 0.9
+    steps_for_decay: 250                # decay the learning rate after this many steps
+    weight_decay: 1.0e-4
+
+    compute_test_loss: False
+    compute_test_loss_rate: 500         # how often to compute the test loss
+    test_loss_num_iterations: 50        # how many samples to use to compute the test loss
+    garbage_collect_rate: 1
+
+dcn:
+    descriptor_dimension: 16
+    image_width: 1280
+    image_height: 720
+    normalize: False
+    model_name: Resnet34_8s             # options: {Resnet34_8s, Resnet101_8s, etc.} Resnet18_8s Resnet50_8s
+
+loss:
+    use_decreasing_parameter: False
+    eta: 1.0                            # heatmap loss configs
+    sigma: 10.0
+    use_decreasing_sample: False
+    decreasing_sample_num: 60

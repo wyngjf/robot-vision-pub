@@ -1,0 +1,38 @@
+git:
+  url: https://github.com/open-mmlab/mmpose.git
+
+pip:
+  deps:
+    - openmim
+  ignore_installed: True
+  this_pkg_install_mode: None
+  custom_cmd:
+    - "mim install mmengine mmcv>=2.0.1 mmdet>=3.1.0 mmpose>=1.1.0"
+
+data:
+  wget:
+    # Detection config and model for
+    # det medium
+    - rel_path:       mmpose/rtmdet
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmpose/rtmdet_m_8xb32-100e_coco-obj365-person-235e8209.pth
+    # det nano
+    - rel_path:       mmpose/rtmdet
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmpose/rtmdet_nano_8xb32-100e_coco-obj365-person-05d8511e.pth
+
+    # Whole-body pose estimation
+    # pose x (384 x 288)
+    - rel_path:       mmpose/rtmpose
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-x_simcc-coco-wholebody_pt-body7_270e-384x288-401dfc90_20230629.pth
+    # pose l (384 x 288)
+    - rel_path:       mmpose/rtmpose
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-l_simcc-coco-wholebody_pt-aic-coco_270e-384x288-eaeb96c8_20230125.pth
+    # pose l (256 x 192)
+    - rel_path:       mmpose/rtmpose
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-l_simcc-coco-wholebody_pt-aic-coco_270e-256x192-6f206314_20230124.pth
+    # pose m (256 x 192)
+    - rel_path:       mmpose/rtmpose
+      url:            https://download.openmmlab.com/mmpose/v1/projects/rtmposev1/rtmpose-m_simcc-coco-wholebody_pt-aic-coco_270e-256x192-cd5e845c_20230123.pth
+
+
+
+

@@ -1,0 +1,5 @@
+git:
+  url:        https://gitlab.eecs.umich.edu/ngv-python-modules/opendr.git
+  recursive:  False
+pip:
+  this_pkg_install_mode: release

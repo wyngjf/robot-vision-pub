@@ -1,0 +1,5 @@
+git:
+  url:        https://github.com/hassony2/manopth
+  recursive:  False
+pip:
+  this_pkg_install_mode: develop

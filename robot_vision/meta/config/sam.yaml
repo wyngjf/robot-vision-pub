@@ -1,0 +1,22 @@
+git:
+  url:        git@github.com:facebookresearch/segment-anything.git
+  recursive:  False
+pip:
+  deps:
+    - opencv-python
+    - pycocotools
+    - matplotlib
+    - onnxruntime
+    - onnx
+    - spatial-correlation-sampler
+    - mmengine
+  this_pkg_install_mode: develop
+
+data:
+  wget:
+    - rel_path:   sam
+      url:        https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth
+    - rel_path:   sam
+      url:        https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth
+    - rel_path:   sam
+      url:        https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth

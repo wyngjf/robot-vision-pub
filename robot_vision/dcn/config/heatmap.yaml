@@ -1,0 +1,14 @@
+same_object:        True
+different_objects:  False
+multiple_object:    False # sample from multi object scenes
+randomize_images:   True
+
+image_blend_weight:           0.3
+heatmap_kernel_variance:      5
+heatmap_vis_upper_bound:      0.75
+
+#norm_diff_threshold:          0.25
+#norm_diff_threshold_dict:
+#  hats_consistent_M_background_0.500_3:               0.25
+#  hats_specific_M_background_2.000_9:                 0.35
+#  shoes_specific_M_background_2.000_6_with_synthetic: 0.35

@@ -1,0 +1,37 @@
+git:
+  url:        https://github.com/microsoft/MeshGraphormer.git
+  recursive:  True
+pip:
+  deps:
+    - yacs
+    - cython
+    - nltk
+    - scipy
+    - 'numpy==1.23.1'
+    - chumpy
+    - boto3
+    - requests
+    - tqdm
+    - opencv-python
+    - matplotlib
+  ignore_installed: True
+  this_pkg_install_mode: develop
+depend_on:
+    - manopth
+    - apex
+    - opendr
+data:
+    gdown:
+      - rel_path:       mano_model
+        name:           MANO_LEFT.pkl
+        url:            https://drive.google.com/file/d/1_IzjSTH1XSdQtPBVlzVHpXUk3pEkatYU/view?usp=sharing
+        sym:
+          src_rel:      MANO_LEFT.pkl
+          target_rel:   src/modeling/data/MANO_LEFT.pkl
+      - rel_path:       mano_model
+        name:           MANO_RIGHT.pkl
+        url:            https://drive.google.com/file/d/1q4UfbRDHmlkQmwRiGiStSdAQN5T8Odyc/view?usp=sharing
+        sym:
+          src_rel:      MANO_RIGHT.pkl
+          target_rel:   src/modeling/data/MANO_RIGHT.pkl
+
