@@ -1,0 +1,4 @@
+data:
+  wget:
+    - rel_path:       unimatch
+      url:            https://s3.eu-central-1.amazonaws.com/avg-projects/unimatch/pretrained/gmstereo-scale2-regrefine3-resumeflowthings-middleburyfthighres-a82bec03.pth

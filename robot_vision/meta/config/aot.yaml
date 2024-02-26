@@ -1,0 +1,5 @@
+data:
+  gdown:
+    - rel_path:   aot
+      name:       R50_DeAOTL_PRE_YTB_DAV.pth
+      url:        https://drive.google.com/file/d/1QoChMkTVxdYZ_eBlZhK2acq9KMQZccPJ/view
