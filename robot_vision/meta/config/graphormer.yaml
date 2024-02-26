@@ -35,3 +35,23 @@ data:
           src_rel:      MANO_RIGHT.pkl
           target_rel:   src/modeling/data/MANO_RIGHT.pkl
 
+    wget:
+      - rel_path:       MeshGraphormer
+        name:           graphormer_h36m_state_dict.bin
+        url:            https://datarelease.blob.core.windows.net/metro/models/graphormer_h36m_state_dict.bin
+
+      - rel_path:       MeshGraphormer
+        name:           graphormer_3dpw_state_dict.bin
+        url:            https://datarelease.blob.core.windows.net/metro/models/graphormer_3dpw_state_dict.bin
+
+      - rel_path:       MeshGraphormer
+        name:           graphormer_hand_state_dict.bin
+        url:            https://datarelease.blob.core.windows.net/metro/models/graphormer_hand_state_dict.bin
+
+      - rel_path:       hrnet
+#        name:           hrnetv2_w64_imagenet_pretrained.pth
+        url:            https://datarelease.blob.core.windows.net/metro/models/hrnetv2_w64_imagenet_pretrained.pth
+
+      - rel_path:       hrnet
+#        name:           cls_hrnet_w64_sgd_lr5e-2_wd1e-4_bs32_x100.yaml
+        url:            https://datarelease.blob.core.windows.net/metro/models/cls_hrnet_w64_sgd_lr5e-2_wd1e-4_bs32_x100.yaml

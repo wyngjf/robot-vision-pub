@@ -29,6 +29,8 @@ def update_config(dcn_training_root: Union[str, Path], overwrite: bool = False) 
         )
     else:
         config = load_dict_from_yaml(config_filename)
+        if not config.get("all", None):
+            config["all"] = {}
 
     all_obj = get_ordered_subdirs(dcn_path)
     for obj in all_obj:
