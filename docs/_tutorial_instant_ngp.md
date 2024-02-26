@@ -91,7 +91,7 @@ then
 ```shell
 git clone --recursive https://github.com/wyngjf/instant-ngp.git
 cd instant-ngp
-git checkout origin/dex_nerf
+# the default branch should be origin/dex_nerf
 git submodule  update --init --recursive
 cmake . -B build_py310
 cmake --build build_py310 --config RelWithDebInfo -j8
